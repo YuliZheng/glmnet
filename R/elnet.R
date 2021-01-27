@@ -36,7 +36,7 @@ fit=if(is.sparse).Fortran("spelnet",
         jerr=integer(1),PACKAGE="glmnet"
         )
 else .Fortran("elnet",
-          ka,parm=alpha,nobs,nvars,as.double(x),y,weights,jd,vp,cl,ne,nx,nlam,flmin,ulam,thresh,isd,intr,maxit,
+          ka,parm=alpha,nobs,nvars,x,y,weights,jd,vp,cl,ne,nx,nlam,flmin,ulam,thresh,isd,intr,maxit,
           lmu=integer(1),
           a0=double(nlam),
           ca=double(nx*nlam),
